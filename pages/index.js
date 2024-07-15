@@ -1,19 +1,9 @@
 import React, { useRef } from "react";
-import IframeComm from "react-iframe-comm";
+// import IframeComm from "react-iframe-comm";
 import { useRouter } from "next/router";
 
 const Page = (props) => {
   const router = useRouter();
-  const iframe = useRef();
-  const iframeContainerRef = useRef();
-
-  const attributes = {
-    src: "/game/index.html",
-    width: "100%",
-    height: "100%",
-    allowFullScreen: true,
-    frameBorder: 1, // show frame border just for fun...
-  };
 
   const noFullScreenWarning = () =>
     console.warn("Could not request fullscreen");
@@ -33,7 +23,7 @@ const Page = (props) => {
 
   const printContent = (content) =>
     console.log(`${content?.data?.type}: `, content?.data);
-
+``
   return (
     <div
       style={{
@@ -49,9 +39,8 @@ const Page = (props) => {
       ref={iframeContainerRef}
     >
       <div className="iframe-parent">
-        {/* <IframeComm ref={iframe} attributes={attributes} /> */}
         <iframe
-          src="/game/index.html"
+          src="game/index.html"
           width="100%"
           height="100%"
           frameBorder="0"

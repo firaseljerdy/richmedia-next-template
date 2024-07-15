@@ -39,7 +39,7 @@ const Page = (props) => {
     >
       <div className="iframe-parent">
         <iframe
-          src="game/index.html"
+          src="https://panadol-plane.s3.eu-north-1.amazonaws.com/game/index.html"
           width="100%"
           height="100%"
           frameBorder="0"

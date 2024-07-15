@@ -36,7 +36,6 @@ const Page = (props) => {
         zIndex: 20,
       }}
       className="game-container"
-      ref={iframeContainerRef}
     >
       <div className="iframe-parent">
         <iframe

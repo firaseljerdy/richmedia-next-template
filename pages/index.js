@@ -23,7 +23,7 @@ const Page = (props) => {
 
   const printContent = (content) =>
     console.log(`${content?.data?.type}: `, content?.data);
-``
+  ``;
   return (
     <div
       style={{
@@ -39,21 +39,19 @@ const Page = (props) => {
     >
       <div className="iframe-parent">
         <iframe
-          src="https://panadol-plane.s3.eu-north-1.amazonaws.com/game/index.html"
+          src="https://maddict-media.s3.eu-north-1.amazonaws.com/panadol-night-static-files/PanadolPlaneCampaign+(1)/index.html"
           width="100%"
           height="100%"
           frameBorder="0"
         ></iframe>
       </div>
       <style jsx>
-        {
-          `
-            .iframe-parent {
-              width: 100%;
-              height: 100%;
-            }
-          `
-        }
+        {`
+          .iframe-parent {
+            width: 100%;
+            height: 100%;
+          }
+        `}
       </style>
     </div>
   );
